@@ -1,14 +1,16 @@
 {
     "buildCommand": "next build",
     "cleanUrls": true,
-
+    
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+    
     "crons": [
         {
            "path": "/api/cron",
            "schedule": "0 5 * * *"
         }
     ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    
 
     
   }
