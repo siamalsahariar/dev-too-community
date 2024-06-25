@@ -2,8 +2,6 @@
     "buildCommand": "next build",
     "cleanUrls": true,
     
-    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-    
     "crons": [
         {
            "path": "/api/cron",
