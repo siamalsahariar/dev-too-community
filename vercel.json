@@ -1,0 +1,18 @@
+{
+    "buildCommand": "next build",
+    "cleanUrls": true,
+
+    "crons": [
+        {
+            "path": "/api/v1/email/reports/hosting",
+            "schedule": "0 */5 * ? * *"
+        }
+    ],
+
+
+    "builds": [
+      { "src": "*.html", "use": "@vercel/static" },
+      { "src": "*.py", "use": "@vercel/python" },
+      { "src": "*.js", "use": "@vercel/node" }
+    ]
+  }
